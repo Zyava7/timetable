@@ -1,5 +1,6 @@
 const gulp = require('gulp');
 const replace = require('gulp-replace');
+const webpHTML = require('gulp-webp-html');
 
 // HTML
 const fileInclude = require('gulp-file-include');
