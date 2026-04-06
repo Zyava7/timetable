@@ -1,0 +1,15 @@
+/* Base */
+@import './base/reset';
+@import './base/vars';
+@import './base/mixins';
+@import './base/fontsAutoGen';
+@import './base/base';
+@import './base/utils'; // Error test
+@import './base/containers';
+@import './base/sticky-footer';
+@import './base/iconFonts';
+
+/* Blocks */
+@import './blocks/*.scss';
+
+/* No styles code below. Only in modules */
