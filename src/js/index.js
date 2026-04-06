@@ -4,6 +4,12 @@ const dates = document.getElementById("dates")
 const prevBtn = document.getElementById("prev")
 const nextBtn = document.getElementById("next")
 
+const today = new Date();
+  const yyyy = today.getFullYear();
+  const mm = String(today.getMonth() + 1).padStart(2, '0'); 
+  const dd = String(today.getDate()).padStart(2, '0');
+  document.getElementById('start-date').value = `${yyyy}-${mm}-${dd}`;
+
 
 const currentTheme = localStorage.getItem('workdate');
 let current = new Date()
