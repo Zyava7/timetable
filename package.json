@@ -1,9 +1,11 @@
 {
+	"homepage": "https://zyava7.github.io/timetable",
 	"devDependencies": {
 		"@babel/core": "^7.22.5",
 		"@babel/preset-env": "^7.22.5",
 		"@bdchauvette/gulp-prettier": "^2.0.0",
 		"css-loader": "^6.8.1",
+		"gh-pages": "^6.3.0",
 		"gulp": "^4.0.2",
 		"gulp-autoprefixer": "^8.0.0",
 		"gulp-babel": "^8.0.0",
@@ -48,5 +50,12 @@
 		"@fancyapps/ui": "^5.0.36",
 		"avif-webp-checker": "^1.0.0",
 		"swiper": "^11.0.6"
+	},
+	"scripts": {
+		"build": "gulp build",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build"
 	}
+
+	
 }
