@@ -16,6 +16,8 @@ body {
   display: flex;
   gap: 10px;
   align-items: center;
+  flex-wrap: wrap;
+    justify-content: center;
 }
 
 .shift-settings label {
@@ -41,7 +43,8 @@ body {
 }
 
 .calendar {
-  width: fit-content;
+  width: 100%;
+  max-width: 600px;
 }
 .calendar-header {
   display: flex;
@@ -91,6 +94,7 @@ body {
   width: 100px;
   min-width: 100px;
   max-width: 100px;
+  opacity: 0;
 }
 .calendar-days .calendar-weeknum {
   background: none;
