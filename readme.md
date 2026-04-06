@@ -14,3 +14,6 @@ RELEASE:
 gulp docs
 ```
 
+
+
+npm run deploy
