@@ -42,7 +42,6 @@ function renderCalendar(date) {
   for (let week = 0; week < rows; week++) {
     let weekStartDate = new Date(year, month, 1 - (startDay - 1) + week * 7)
     const weekNum = getWeekNumber(weekStartDate)
-    dates.innerHTML += `<div class="calendar-weeknum">w${weekNum}</div>`
     for (let i = 1; i <= 7; i++) {
       dayIndex++
       let cell = ""
