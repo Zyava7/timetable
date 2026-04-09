@@ -9,6 +9,21 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: 
+    radial-gradient(circle at 15% 20%, rgba(255,255,255,0.35) 0%, transparent 40%),
+    radial-gradient(circle at 85% 10%, rgba(255,255,255,0.25) 0%, transparent 45%),
+    radial-gradient(circle at 80% 80%, rgba(255,255,255,0.25) 0%, transparent 40%),
+    radial-gradient(circle at 10% 85%, rgba(255,255,255,0.2) 0%, transparent 45%),
+    linear-gradient(135deg, #667eea, #764ba2, #6b8cff, #8f6ed5);
+    
+  background-size: 200% 200%;
+  animation: gradientMove 18s ease infinite;
+  background-attachment: fixed;
+}
+@keyframes gradientMove {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .shift-settings {
@@ -100,6 +115,7 @@ body {
   background: none;
 }
 .calendar-dates div {
+  background: #fff;
   min-height: 50px;
   border: 1px solid #eee;
   display: flex;
@@ -122,17 +138,17 @@ body {
   line-height: 25px;
 }
 
-.shift-day {
+.calendar-dates div.shift-day {
   background-color: #fff34b; 
 }
 
-.shift-night {
+.calendar-dates div.shift-night {
   background-color: #4d4c4c; 
   color: #fff;
 }
 
 
-.shift-off {
+.calendar-dates div.shift-off {
   background-color: #b3faaa; 
 }
 
