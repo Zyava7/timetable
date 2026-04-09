@@ -97,8 +97,33 @@ document.getElementById('set-start').onclick = () => {
   localStorage.setItem('workdate', dateValue);
 };
 
-
-
 renderCalendar(current)
+
+// JavaScript for the modal
+const modal = document.getElementById('modal');
+const closeBtn = document.getElementsByClassName('close')[0];
+
+// Function to open modal
+function openModal() {
+  modal.style.display = 'block';
+}
+
+// Function to close modal
+function closeModal() {
+  modal.style.display = 'none';
+}
+
+// Close when clicking the close button
+closeBtn.onclick = closeModal;
+
+// Close when clicking outside the modal
+window.onclick = function(event) {
+  if (event.target == modal) {
+    closeModal();
+  }
+}
+
+// Example: Open modal on button click (add a button in HTML)
+document.getElementById('openModalBtn').onclick = openModal;
 
 

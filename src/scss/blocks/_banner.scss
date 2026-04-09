@@ -26,41 +26,17 @@ body {
   100% { background-position: 0% 50%; }
 }
 
-.shift-settings {
-  margin-bottom: 20px;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  flex-wrap: wrap;
-    justify-content: center;
-}
-
-.shift-settings label {
-  font-size: 18px;
-}
-
-.shift-settings input {
-  padding: 5px;
-  font-size: 16px;
-}
-
-.shift-settings button {
-  padding: 5px 10px;
-  background: #1E293B;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.shift-settings button:hover {
-  background: #2a5a5f;
+main {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .calendar {
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
   box-shadow: 0 10px 40px rgba(0,0,0,0.35);
+  margin-bottom: 20px;
 }
 .calendar-header {
   display: flex;
@@ -149,6 +125,43 @@ body {
   line-height: 25px;
 }
 
+.change-start {
+  display: flex;
+  justify-self: center;
+}
+
+/* CSS for the modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: black;
+}
 .calendar-dates div.shift-day {
   background-color: #fff34b; 
 }
@@ -158,8 +171,38 @@ body {
   color: #fff;
 }
 
-
 .calendar-dates div.shift-off {
   background-color: #b3faaa; 
+}
+
+.shift-settings {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.shift-settings label {
+  font-size: 18px;
+}
+
+.shift-settings input {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.set-start, .change-start {
+  padding: 5px 10px;
+  background: #1E293B;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.shift-settings button:hover {
+  background: #2a5a5f;
 }
 
